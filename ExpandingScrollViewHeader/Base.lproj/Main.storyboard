@@ -30,6 +30,9 @@
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-6v-k8h">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="LLZ-6v-k8h" secondAttribute="height" multiplier="3:2" id="arW-sl-gVq"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-bo-WV4">
                                         <rect key="frame" x="20" y="294.5" width="374" height="771"/>
@@ -47,7 +50,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                     <constraint firstItem="LLZ-6v-k8h" firstAttribute="leading" secondItem="n7b-K0-QZS" secondAttribute="leading" id="Gpi-ZM-wfi"/>
                                     <constraint firstAttribute="bottom" secondItem="g3c-bo-WV4" secondAttribute="bottom" id="T51-Gv-rvd"/>
                                     <constraint firstItem="LLZ-6v-k8h" firstAttribute="trailing" secondItem="n7b-K0-QZS" secondAttribute="trailing" id="THC-A0-xzi"/>
-                                    <constraint firstItem="LLZ-6v-k8h" firstAttribute="bottom" secondItem="n7b-K0-QZS" secondAttribute="bottom" priority="750" id="bZj-uT-8Hk"/>
+                                    <constraint firstItem="LLZ-6v-k8h" firstAttribute="bottom" secondItem="n7b-K0-QZS" secondAttribute="bottom" id="bZj-uT-8Hk"/>
                                     <constraint firstItem="n7b-K0-QZS" firstAttribute="leading" secondItem="zRK-M4-8zu" secondAttribute="leading" id="sdm-s7-FuZ"/>
                                     <constraint firstItem="g3c-bo-WV4" firstAttribute="top" secondItem="n7b-K0-QZS" secondAttribute="bottom" constant="18.5" id="xpu-RS-DAl"/>
                                 </constraints>
@@ -60,7 +63,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             <constraint firstItem="zRK-M4-8zu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IMf-Yx-eze"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3c-bo-WV4" secondAttribute="trailing" constant="20" id="Ps6-wV-fGg"/>
                             <constraint firstItem="g3c-bo-WV4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bgg-Kc-xil"/>
-                            <constraint firstAttribute="top" secondItem="LLZ-6v-k8h" secondAttribute="top" id="iOn-Z6-ZFL"/>
+                            <constraint firstAttribute="top" secondItem="LLZ-6v-k8h" secondAttribute="top" priority="750" id="iOn-Z6-ZFL"/>
                             <constraint firstItem="zRK-M4-8zu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="smr-Z6-ZlL"/>
                             <constraint firstItem="n7b-K0-QZS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zF9-0C-QnQ"/>
                         </constraints>

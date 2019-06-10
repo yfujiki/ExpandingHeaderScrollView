@@ -23,12 +23,22 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7b-K0-QZS" userLabel="ImageContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageContainerView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfJ-qb-NLs">
+                                                <rect key="frame" x="127.5" y="127.5" width="159" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="ZfJ-qb-NLs" firstAttribute="centerX" secondItem="n7b-K0-QZS" secondAttribute="centerX" id="BRz-EC-6m1"/>
                                             <constraint firstAttribute="width" secondItem="n7b-K0-QZS" secondAttribute="height" multiplier="375:250" id="L7H-7U-j9V"/>
+                                            <constraint firstItem="ZfJ-qb-NLs" firstAttribute="centerY" secondItem="n7b-K0-QZS" secondAttribute="centerY" id="gss-Ew-Ach"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-6v-k8h">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-6v-k8h">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="LLZ-6v-k8h" secondAttribute="height" multiplier="3:2" id="arW-sl-gVq"/>

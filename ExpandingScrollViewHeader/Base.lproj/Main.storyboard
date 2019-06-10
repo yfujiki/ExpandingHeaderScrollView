@@ -38,7 +38,7 @@
                                             <constraint firstItem="ZfJ-qb-NLs" firstAttribute="centerY" secondItem="n7b-K0-QZS" secondAttribute="centerY" id="gss-Ew-Ach"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-6v-k8h">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-6v-k8h">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="LLZ-6v-k8h" secondAttribute="height" multiplier="3:2" id="arW-sl-gVq"/>
@@ -89,6 +89,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         </scene>
     </scenes>
     <resources>
-        <image name="owl" width="320" height="213"/>
+        <image name="fox" width="320" height="213"/>
     </resources>
 </document>

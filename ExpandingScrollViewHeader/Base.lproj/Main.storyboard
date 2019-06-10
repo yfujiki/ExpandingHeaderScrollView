@@ -21,6 +21,16 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-M4-8zu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7b-K0-QZS" userLabel="ImageContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="n7b-K0-QZS" secondAttribute="height" multiplier="375:250" id="L7H-7U-j9V"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-6v-k8h">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-bo-WV4">
                                         <rect key="frame" x="20" y="294.5" width="374" height="771"/>
                                         <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -30,19 +40,16 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-6v-k8h">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="275.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="LLZ-6v-k8h" secondAttribute="height" multiplier="320:213" id="woH-zc-NCb"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="LLZ-6v-k8h" firstAttribute="top" secondItem="zRK-M4-8zu" secondAttribute="top" id="4ky-Rl-icK"/>
+                                    <constraint firstItem="n7b-K0-QZS" firstAttribute="top" secondItem="zRK-M4-8zu" secondAttribute="top" id="02n-NP-x5W"/>
+                                    <constraint firstAttribute="trailing" secondItem="n7b-K0-QZS" secondAttribute="trailing" id="2mE-dz-8sG"/>
+                                    <constraint firstItem="LLZ-6v-k8h" firstAttribute="leading" secondItem="n7b-K0-QZS" secondAttribute="leading" id="Gpi-ZM-wfi"/>
                                     <constraint firstAttribute="bottom" secondItem="g3c-bo-WV4" secondAttribute="bottom" id="T51-Gv-rvd"/>
-                                    <constraint firstAttribute="trailing" secondItem="LLZ-6v-k8h" secondAttribute="trailing" id="TH4-LW-tbC"/>
-                                    <constraint firstItem="LLZ-6v-k8h" firstAttribute="leading" secondItem="zRK-M4-8zu" secondAttribute="leading" id="Vpj-ig-cZZ"/>
-                                    <constraint firstItem="g3c-bo-WV4" firstAttribute="top" secondItem="LLZ-6v-k8h" secondAttribute="bottom" constant="19" id="zDw-1W-AEr"/>
+                                    <constraint firstItem="LLZ-6v-k8h" firstAttribute="trailing" secondItem="n7b-K0-QZS" secondAttribute="trailing" id="THC-A0-xzi"/>
+                                    <constraint firstItem="LLZ-6v-k8h" firstAttribute="bottom" secondItem="n7b-K0-QZS" secondAttribute="bottom" priority="750" id="bZj-uT-8Hk"/>
+                                    <constraint firstItem="n7b-K0-QZS" firstAttribute="leading" secondItem="zRK-M4-8zu" secondAttribute="leading" id="sdm-s7-FuZ"/>
+                                    <constraint firstItem="g3c-bo-WV4" firstAttribute="top" secondItem="n7b-K0-QZS" secondAttribute="bottom" constant="18.5" id="xpu-RS-DAl"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -53,8 +60,9 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             <constraint firstItem="zRK-M4-8zu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IMf-Yx-eze"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3c-bo-WV4" secondAttribute="trailing" constant="20" id="Ps6-wV-fGg"/>
                             <constraint firstItem="g3c-bo-WV4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bgg-Kc-xil"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="LLZ-6v-k8h" secondAttribute="top" constant="44" id="iOn-Z6-ZFL"/>
                             <constraint firstItem="zRK-M4-8zu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="smr-Z6-ZlL"/>
-                            <constraint firstItem="LLZ-6v-k8h" firstAttribute="width" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zCO-7e-QGP"/>
+                            <constraint firstItem="n7b-K0-QZS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zF9-0C-QnQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
